@@ -1,0 +1,203 @@
+:root {
+  --black: #1f2937;
+  --blue: #3882f6;
+  --darkblue: #1f2937;
+  --gray: #e5e7eb;
+  --white: #f9faf8;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.infopanel__container,
+.infopanel__container--item,
+.cta {
+  display: flex;
+}
+
+.cta-btn {
+  border: 2px solid var(--white);
+  border-radius: 0.5rem;
+}
+
+.infopanel__container {
+  gap: 4rem;
+  justify-content: center;
+}
+
+.infopanel__container--item {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infopanel--graphic {
+  border: 0.25rem solid var(--blue);
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.hero {
+  background: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  background: var(--gray);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 8rem;
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax var(--darkblue);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed--two {
+  box-shadow: 0 0 0 100vmax var(--gray);
+  clip-path: inset(0 -100vmax);
+}
+
+.infopanel,
+.cta {
+  padding: 4rem 0;
+}
+
+.cta__inner {
+  background: var(--blue);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 9rem;
+  width: 100%;
+}
+
+button {
+  background: var(--blue);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  margin: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
+}
+
+button:hover {
+  background: var(--gray);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 1.5rem;
+}
+
+.hero__img {
+  height: auto;
+  width: 45vw;
+}
+
+nav {
+  padding-top: 1rem;
+}
+
+footer {
+  padding: 2.5rem 0;
+}
+
+/* Typography */
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gray);
+  cursor: pointer;
+  font-style: italic;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.cta-text {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta-p {
+  color: var(--white);
+}
+
+.quote--text {
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: light;
+  max-width: 40ch;
+}
+
+.quote__caption {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
+
+.infopanel--text {
+  margin: 0.5rem 0 0 0;
+  max-width: 17ch;
+  text-align: center;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+li {
+  color: var(--gray);
+}
+
+.hero__container {
+  display: flex;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.hero__text {
+  color: var(--gray);
+  max-width: 45ch;
+}
+
+.footer--text {
+  color: var(--white);
+  text-align: center;
+}
